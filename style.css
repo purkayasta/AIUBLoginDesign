@@ -1,0 +1,43 @@
+#logo_div{
+    width: 40%;
+    float: left;
+    overflow: hidden;
+}
+#company_name{
+    height: auto;
+    float: right;
+    text-align: justify;
+}
+
+#middle_bar{
+    position: absolute;
+    left: 45%;
+    top: 2%;
+    bottom: 80%;
+    border-left: 2px solid gray;
+}
+
+#company{
+    width: 400px;
+    height: 150px;
+}
+
+#left_image_div{
+    position: absolute;
+    width: 65%;
+    height: 100%;
+    left: 0px;
+}
+
+#login{
+    width: 30%;
+    position: absolute;
+    right: 20px;
+    height: 100%; 
+}
+
+#logo{
+    background: url("image/logo.png");
+}
+
+

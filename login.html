@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Pharmacy</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div>
+            <div id="left_image_div">
+                <img width="100%" height="100%" src="images/frontheader.jpg" />
+            </div>
+            
+            <div id="login" class="container">
+                <div id="company">
+                    <div id="logo_div">
+                        <img src="images/logo.png" />
+                    </div>
+                    <div id="middle_bar"></div>
+                    <div id="company_name">
+                        <br />
+                        <h3>Friendzar Pharmacy</h3>
+                        <h6>--An Online Pharmacy Makes Life Better</h6>
+                    </div>
+                </div>
+                <form class="form-sigin">
+
+                    <h5>Sign in with your company Username and password</h5><br />
+                    <label for="inputName">Please Enter Username</label>
+                    <input type="text" id="inputName" class="form-control" placeholder="User Name" autofocus/>
+                    <span id="username_error"></span>
+                    <br/>
+                    <label for="inputPassword">Password</label>
+                    <input type="password" id="inputPassword" class="form-control" placeholder="Password" autofocus/>
+                    <span id="password_error"></span>
+                    <br/>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" value="remember_me"/>Remember Me
+                        </label>
+                    </div>
+                    <button id="btn" class="btn btn-lg btn-success btn-block" type="submit">Sign In</button>
+                </form>
+            </div>
+        </div>
+        <script type="text/javascript">
+            var user = document.getElementById('inputName').value;
+            var password = document.getElementById('inputPassword').value;
+            var error = document.getElementById('password_error');
+            var btn = document.getElementById('btn');
+            
+            btn.addEventListener("click", function(){
+                if (user){
+                
+                }else{
+                    error.innerHTML = "Please Enter Everything to continue";
+                }
+            });
+            
+        </script>
+    </body>
+</html>
